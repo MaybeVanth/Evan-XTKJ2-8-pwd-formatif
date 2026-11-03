@@ -1,0 +1,50 @@
+/* Font yang digunakan */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+/* Menghubungkan gambar latar belakang, mengatur ukuran dan posisinya, mengatur sifat gambar setelah diposisikan, dan menambahkan padding */
+#about {
+    background-image: url('../assets/images/BackgroundAlam.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 60px; 
+}
+
+/* Menyesuaikan lebar kotak teks, ukuran margin dihitung website, mengatur warna kotak, membulatkan ujung kotak, menambah padding di sekitar text */
+.about-box {
+    width: 620px;
+    margin:auto;
+    background-color: rgba(144, 238, 144, 0.85);
+    border-radius: 30px; 
+    padding: 10px 50px;
+}
+
+/* Mengatur font family, penempatan teks di tengah, dan warna text "Tentang Saya" */
+.about-box h2{
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    color: #222222;
+}
+
+/* Mengatur ukuran huruf, penempatatan di kiri, dan jarak antar baris untuk isi  */
+.about-box p{
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.55;
+}
+
+/* Mengatur penempatan dan memiringkan tulisan closing "-Evan Theryanto"  */
+.about-box .closing{
+    text-align: right;
+    font-style: italic;
+}
+
+/* Mangatur penempatan dan memberi padding pada footer */
+footer {
+    text-align: center;
+    padding: 17.5px;
+}

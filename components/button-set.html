@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>button set</title>
     <style>
+
+        /* Warna background website */
         body {
-            background-color: #f4f4f4;
+            background-color: #f4f4f4;;
             font-family:arial, sans-serif;
         }
 
+        /* Warna tulisan "Piihan Menu dan Aksi" */
         h2 {
             color: darkblue;
             font-size:20px;
         }
 
+        /* Styling untuk tombol, diantara lain menunjukkan tombol sebagai inline-block, menambahkan padding, membulatkan ujung kotak sebesar 8px, menebalkan tulisan, dan menghapus garis bawah */
         .btn{
             display:inline-block;
             padding: 12px 24px;
@@ -23,45 +27,56 @@
             text-decoration:none;
         }
 
+        /* Mengatur jarak antar tombol */
             .button-group .btn {
             margin-right: 10px;
             margin-bottom: 10px;
         }
 
-
+        /* Warna tombol "Lihat Proyek" dan warna tulisannya*/
         .btn-primary{
             background-color: rgb(0, 123, 255);
             color: rgba(255, 255, 255, 1);
         }
 
+        /* Warna tombol "Unduh CV" */
+        
         .btn-secondary{
             background-color: pink; 
         }
 
+        /* Warna tombol "Hubungi Saya" dan garis luar pada kotaknya */
         .btn-outline{
             background-color: white;
             border: 2px solid black;    
         }
 
+        /* Warna tulisan pada tombol "Unduh CV" dan "Hubungi Saya" */
         .btn-secondary, .btn-outline {
             color: rgba(0, 0, 0, 0.8);
         }
+
+        /* Warna tombol "Kirim Pesan" */
         .btn-send{
             background-color: orange;
         }
 
+        /* Warna tombol "Lihat Proyek" saat mouse berada di atas tombol*/
         .btn-primary:hover{
             background-color:rgb(0, 102, 204);  
         }
 
+        /* Warna tombol "Unduh CV" saat mouse berada di atas tombol */
         .btn-secondary:hover{
             background-color: rgb(255, 166, 180);
         }
 
+        /* Warna tombol "Hubungi Saya" saat mouse berada di atas tombol */
         .btn-outline:hover{
             background-color: rgb(240, 240, 240);
         }
 
+        /* Warna tombol "Kirim Pesan" saat mouse berada di atas tombol */
         .btn-send:hover{
             background-color: rgb(230,138,0);
         }
@@ -69,12 +84,14 @@
 
     </style>
 </head>
-<body>
+<body> 
 
     <main>
 
+        <!-- Tulisan Menu dan Aksi -->
         <h2>Pilihan Menu dan Aksi</h2>
         
+        <!-- Mengelompokkan tombol dan memberi tiap tombol sebuah class -->
         <div class="button-group">
             <a href="#" class="btn btn-primary">Lihat Proyek</a>
             <a href="#" class="btn btn-secondary">Unduh CV</a>
