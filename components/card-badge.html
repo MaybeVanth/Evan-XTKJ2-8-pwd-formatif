@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Badge</title>
+    <style>
+
+        /* Mengatur font semua elemen di dalam body, menambahkan warna latar, dan mengatur margin serta padding pada 0 */
+        body{
+            font-family: sans-serif;
+            background-color:#f4f4f4;
+            margin:0;
+            padding:0;
+        }
+
+        /* Mengatur warna latar belakang, warna tulisan, menambah padding, dan mengatur text ke tengah */
+        #top{
+            background-color:#0A192F;    
+            color:#ffffff;
+            padding:20px;
+            text-align:center;
+        }
+
+        /* Menghapus margin antara header dan isi website di bawahnya */
+        #top h1{
+            margin: 0;
+        }
+
+        /* Mengatur posisi konten, lebar konten, menambah margin 30px di atas-bawah,
+        menambah garis luar/border, menyebumnyikan konten yang berlebihan, dan menambah bayangan pada kotak */
+        .card{
+            position:relative;
+            width: 360px;
+            margin: 30px auto;
+            background-color: white;
+            border: 2px solid gray;
+            border-radius: 10px;
+            overflow:hidden;
+            box-shadow: 0 3px 6px rgba(0,0,0,1)
+        }
+
+        /* Mangatur lebar gambar untuk mentok dalam kontainernya, mengatur tingginya secara otomatis,
+        dan menunjukkan gambar melalui persegi. */
+        .card img{
+            width:100%;
+            height:auto;
+            display:block;
+        }
+
+        /* Menambahkan jarak/padding dari ujung kotak ke konten */
+        .card-content{
+            padding:15px
+        }
+
+        /* Badge selalu menempel pada 10 px dari kanan atas konten, mengatur warnanya menjadi oranye, membulatkan ujungnya,
+        dan menambahkan sendikit padding */
+        .card .badge{
+            position:absolute;
+            top: 10px;
+            right: 10px;
+            background-color:orange;
+            border-radius:10px;
+            padding: 3px;
+            font-weight:bold;
+            
+        }
+
+        /* Mengatur lebar paragraf, menambah margin sebesar 15px di semua arah/kiri-kanan dan atas-bawah, menambah jarak antar kalimat, mengatur warna teks */
+        main p{
+            width: 360px;
+            margin: 15px auto;
+            line-height:1.5;
+            color:gray;
+        }
+
+        /* Mengatur tombol "Kembali ke Beranda" ke tengah dan menambah margin di sekitarnya sebesar 40px */
+        footer{
+            text-align:center;
+            margin: 40px;
+        }
+
+        /* Mengatur warna semua tombol dalam footer menjadi oranye dan menghilangkan garis bawah kedua tombol */
+        footer a{ 
+            color:darkblue;
+            text-decoration:none;
+        }
+
+        /* mwngatur posisi tombol "↑ Ke Atas, menaruh tombolnya 20px dari paling kanan bawah halaman, mengatur warna tombol,
+        menghapus garis bawah teks, menambah padding sebesar 15px pada tulisan, membulatkan ujung kotak sebesar 30px, mengatur ukuran
+        font sebesar 14px, z-index:9999; memastikan elemen tidak tertutup elemen lain." */
+        .back-to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: lightblue;
+            text-decoration: none;
+            padding: 15px;
+            border-radius:30px;
+            font-size:14px;
+            z-index:9999;
+        }
+
+        /* Mengubah warna tulisan saat tombol di click */
+        .back-to-top:active{
+            color:darkblue;
+        }
+        /* Menambah warna saat tombol berada di bawah cursor */
+        .back-to-top:hover{
+            background-color: #75cacd;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Menambah header berisi teks "Projek Saya" -->
+    <header id="top">
+        <h1>Projek Saya</h1>
+    </header>
+
+    <!-- Bagian utama website -->
+    <main>
+
+        <!-- Menambahkan class "card" pada baris-baris kode di dalam div, menambahkan gambar, dan menambahkan badge yaitu "BARU" -->
+        <div class="card">
+            <img src="/assets/images/Tugas_DGDUX_AbstrakEmosi.jpg" alt="Tugas Poster DGDUX">
+
+            <span class="badge">BARU</span>
+
+            <div class="card-content">
+                <h3>Poster Abstrak Emosi Manusia - Harapan dan Keputusasaan</h3>
+                <p>Proyek terbaru saya: Poster abstrak bertema emosi manusia. </p>
+
+            </div>
+        </div>
+        
+        <!-- Menambahkan paragraf-paragraf dalam website -->
+        <p>Proyek ini merupakan salah satu karya yang saya buat dalam mata pelajaran DGDUX (Desain Grafis Dasar dan UX Design for Application Development).
+            Dalam proyek ini, saya diberikan sebuah tema untuk membuat poster yang merepresentasikan emosi manusia dalam bentuk abstrak.
+            Tema tersebut memberikan kebebasan bagi saya untuk mengeksplorasi berbagai macam perasaan manusia dan menerjemahkannya ke dalam sebuah karya visual.
+            Dari sekian banyak emosi yang dapat diangkat, saya memilih harapan dan keputusasaan sebagai konsep utama karena keduanya merupakan dua perasaan yang sangat berhubungan
+            dan sering kali hadir secara bersamaan dalam kehidupan manusia.</p>
+
+        <p>Pengembangan ide poster ini dimulai dengan memikirkan bagaimana cara menggambarkan sesuatu yang sebenarnya
+            tidak memiliki bentuk fisik, seperti emosi, ke dalam sebuah media visual.
+            Harapan dan keputusasaan merupakan dua emosi yang cukup bertolak belakang, tetapi memiliki hubungan yang menarik.
+            Harapan sering kali menjadi alasan seseorang untuk terus melangkah, sedangkan keputusasaan dapat muncul ketika seseorang merasa
+            bahwa segala usaha yang telah dilakukan tidak membuahkan hasil.
+            Saya ingin mengangkat hubungan tersebut sebagai dasar pengembangan konsep poster ini, sehingga karya yang dihasilkan tidak sekadar menjadi sebuah gambar,
+            tetapi juga memiliki cerita dan makna tersendiri.</p>
+
+        <p>Dalam proses pembuatannya, saya mencoba menerjemahkan kedua emosi tersebut melalui pendekatan desain abstrak.
+            Pendekatan ini memungkinkan saya untuk tidak terpaku pada penggambaran objek yang realistis atau memiliki arti secara langsung.
+            Sebaliknya, saya dapat menggunakan komposisi, bentuk, elemen visual, dan hubungan antarelemen untuk membangun suasana tertentu.
+            Hal ini menjadi salah satu tantangan dalam pengerjaan proyek karena saya harus memastikan bahwa elemen-elemen yang
+            digunakan tetap memiliki keterkaitan dengan konsep utama,
+            meskipun tidak selalu menggambarkan harapan maupun keputusasaan secara literal.</p>
+
+        <p>Makna harapan yang ingin saya sampaikan melalui poster ini berkaitan dengan keinginan manusia untuk terus percaya
+            bahwa masih ada kemungkinan untuk mendapatkan sesuatu yang lebih baik.
+            Harapan dapat muncul bahkan dalam keadaan yang sulit sekalipun.
+            Terkadang, seseorang hanya membutuhkan satu alasan kecil untuk tetap bertahan dan melanjutkan perjalanan hidupnya.
+            Bagi saya, harapan bukan berarti seseorang selalu berada dalam keadaan bahagia atau memiliki keyakinan penuh terhadap masa depan,
+            melainkan kemampuan untuk tetap melihat adanya kemungkinan di tengah berbagai ketidakpastian yang dihadapi.</p>
+
+        <p>Di sisi lain, keputusasaan menggambarkan keadaan ketika seseorang mulai kehilangan keyakinan, semangat,atau arah dalam menjalani kehidupannya.
+            Perasaan ini dapat muncul akibat kegagalan, tekanan, kehilangan, maupun berbagai pengalaman buruk lainnya.
+            Namun, saya tidak ingin menggambarkan keputusasaan sebagai sesuatu yang sepenuhnya berlawanan dengan harapan.
+            Menurut saya, kedua emosi tersebut justru saling melengkapi.
+            Seseorang tidak akan selalu merasa penuh harapan, begitu pula sebaliknya.
+            Ada kalanya manusia merasa sangat yakin terhadap sesuatu, tetapi pada waktu lain justru merasa ingin menyerah.
+            Perubahan dan pertentangan perasaan inilah yang membuat emosi manusia menjadi sesuatu yang kompleks dan menarik untuk dieksplorasi.</p>
+
+        <p>Melalui proyek ini, saya juga mendapatkan kesempatan untuk memahami
+            bahwa desain grafis tidak selalu harus berfungsi sebagai media penyampaian informasi secara langsung.
+            Sebuah karya visual juga dapat menjadi media untuk menyampaikan perasaan, pemikiran, pengalaman, serta sudut pandang pembuatnya.
+            Saya belajar bahwa dalam merancang sebuah poster, pemilihan elemen visual harus memiliki tujuan dan tidak hanya digunakan sebagai hiasan.
+            Setiap keputusan desain dapat memengaruhi bagaimana orang lain melihat, merasakan, dan menginterpretasikan suatu karya.
+            Selain itu, proyek ini membantu saya mengembangkan kreativitas, kemampuan menerjemahkan ide abstrak,
+            serta pemahaman mengenai hubungan antara konsep dan visualisasi.</p>
+
+        <p>  Secara keseluruhan, proyek ini memberikan pengalaman baru bagi saya dalam mengembangkan sebuah ide menjadi karya visual.
+            Saya menyadari bahwa proses pembuatan poster tidak hanya membutuhkan kreativitas, tetapi juga pemikiran dan pertimbangan dalam memilih setiap elemen desain.
+            Selain menghasilkan sebuah karya, saya juga belajar untuk lebih memperhatikan bagaimana sebuah pesan dapat disampaikan melalui bentuk, warna, dan komposisi.
+            Saya berharap poster ini dapat memberikan gambaran mengenai bagaimana harapan dan keputusasaan dapat hadir secara bersamaan dalam kehidupan manusia.
+            Pengalaman ini juga menjadi motivasi bagi saya untuk terus mengembangkan kemampuan desain grafis dan mencoba pendekatan visual yang lebih kreatif pada proyek berikutnya.
+        </p>
+
+    </main>
+
+    <!-- Tombol footer "Kembali ke Beranda" -->
+     <footer>
+        <a href="/index.html">Kembali ke Beranda</a>
+     </footer>
+
+     <!-- Tombol menaikkan halaman -->
+     <a href="#top" class="back-to-top">↑ Ke Atas</a>
+
+</body>
+</html> 
