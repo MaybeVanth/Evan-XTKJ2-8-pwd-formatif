@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya</title>
+
+    <style>
+
+        /* Mengatur warna website, dan mengatur font family yang digunakan  */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Memberi semua elemen pada section dengan id contact padding sebesar 40px atas-bawah, dan 20px kiri-kanan */
+        #contact {
+            padding: 40px 20px;
+        }
+
+        /* Mengatur lebar semua elemen dengan contact-form ke 400px, menengahkan elemen dengan mengatur margin
+        ke 0 dan fungsinya auto/otomatis, menambah padding di sekitar elemen sebesar 24px, menambah border hitam
+        selebar 1px yang bersifat solid, membulatkan ujung kotak, dan mengatur warna background */
+        .contact-form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 24px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+        }
+
+        /* teks dengan class contact-form dan yang berada dalam h2 yaitu "Hubungi Saya" akan ditengahkan, dan mengatur warna textnya */
+        .contact-form h2 {
+            text-align: center;
+            color: #345082;
+        }
+
+        /* Menambahkan margin pada di bawah elemen dengan class form-group sebesar 16px */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        /* Menunjukkan elemen di kelas form-group dan berada dalam label sebagai balok, m
+        enebalkan tulisan yang berada di dalam label yaitu "Nama", "Email", dan "Pesan", dan menambahkan margin sebesar
+        6px di antara elemen */
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        /* Mengatur lebar bagian input dan textarea untuk memenuhi lebar balok tersebut sebesar 100%,
+        Mengatur ukuran box dengan border-box agar tulisan tidak overflow/kelebihan, menambahkan padding
+        sebesar 6px, dan menggunakan font Arial, Helvetica, dan sans-serif */
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #cbd2dc;
+            border-radius: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Menambahkan garis tepi berwarna gelap dan lumayan tebal saat di click, mengubah warna textbox saat di click, dan menghapus outline */
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border: 3px solid #345082;
+            background-color: #f5f5f5;
+            outline: none;
+        }
+        /* mengatur warna latar belakang tombol kirim, mengatur warna text, mengatur warna font, membuat garis tepi textboxnya bulat,
+        mengubah cursor menjadi pointer saat menyentuh tombolnya, dan menebalkan tulisan*/
+        .btn-submit {
+            background-color: #6195f3;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            padding: 7px;
+            cursor: pointer;
+            font-weight:bold;
+        }
+
+        /* Mengubah warna textbox saat cursor berada di atas textbox */
+        .btn-submit:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menambahkan semua tulisan dan bagian input form yang diperlukan, serta memberi jenis nama pada data yang masuk -->
+
+    <section id="contact">
+        <form class="contact-form">
+
+            <h2>Hubungi Saya</h2>
+
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <p style="text-align: center;">
+        <a href="../index.html">Kembali ke Beranda</a>
+    </p>
+
+</body>
+</html>
