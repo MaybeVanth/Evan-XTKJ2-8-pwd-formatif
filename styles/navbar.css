@@ -1,0 +1,61 @@
+/* Menghapus margin dan mengatur font yang digunakan */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mengatur warna latar belakang pada header */
+#main-header{
+    background-color: #0A192F;
+}
+
+/* Mengatur tampilan elemen navbar menjadi flex, menyebarkan elemen setara rata kiri -> kanan, mengatur item ke tengah,
+dan menambah padding sebesar 15px pada atas-bawah, dan 30px pada kiri-kanan */
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px 30px;
+}
+
+/* Mengatur warna tulisan logo "Evan Theryanto, mengatur ukuran tulisan menjadi 22 pixel, dan menebalkan tulisan */
+.logo{
+    color: #f4f4f4;
+    font-size:22px;
+    font-weight: bold;
+}
+
+/* Mengatur tampilan elemen nav-menu menjadi flex, menambah jaram antar elemen sebesar 24px, dan menghapus margin dan padding */
+.nav-menu{
+    display:flex;
+    gap:24px;
+    margin:0;
+    padding:0;
+}
+
+/* Menghapus titik/dot dari "Beranda, Tentang, Proyek, Kontak" */
+.nav-menu>li{
+list-style: none;
+}
+
+/* Mengatur warna tulisan dan menghapus garis bawah tulisan */
+.nav-menu a{
+    color:#f4f4f4;
+    text-decoration: none;
+}
+
+/* Mengubah warna tulisan saat cursor berada di atas tulisan */
+.nav-menu a:hover{
+    color: grey;
+}
+
+/* Menambahkan padding horizontal/kiri-kanan sebesar 28 pixel untuk maim, dan footer */
+main, footer {
+    padding: 0px 28px;
+}
+
+/* Mengatur teks footer ke tengah, dan menambah padding sebesar 30 pixel atas-bawah sebesar */
+footer{
+    text-align: center;
+    padding: 30px 0px;
+}
