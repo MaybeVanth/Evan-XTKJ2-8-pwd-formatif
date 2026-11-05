@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar</title>
+
+  <style>
+    /* Mengatur ukuran semua elemen agar padding dan border termasuk dalam lebar elemen */
+    *{
+      box-sizing: border-box;
+    }
+
+
+    /* Menghapus margin bawaan, mengatur warna latar belakang, dan memilih jenis font halaman */
+    body{
+      margin: 0;
+      background-color: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    /* Menyusun sidebar dan konten utama secara berdampingan */
+    .layout{
+      display: flex;
+    }
+
+
+    /* Mengatur lebar sidebar, warna latar belakang, warna teks, dan jarak isi dari tepi */
+    #sidebar{
+      width: 25%;
+      background-color: #001736;
+      color: #f4f4f4;
+      padding: 20px;
+    }
+
+
+    /* Menyusun tautan menu secara vertikal dan mengatur jarak antar tautan */
+    #sidebar nav{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+
+    /* Mengatur warna tautan sidebar dan menghilangkan garis bawahnya */
+    #sidebar a{
+      color: #f4f4f4;
+      text-decoration: none;
+    }
+
+
+    /* Mengubah warna tautan saat kursor berada di atasnya */
+    #sidebar a:hover{
+      color: gray;
+    }
+
+
+    /* Mengatur lebar konten utama dan jarak isi dari tepinya */
+    .main-content{
+      width: 75%;
+      padding: 30px;
+    }
+
+
+    /* Mengatur warna judul utama dalam konten */
+    .main-content h1{
+      color: #001736;
+    }
+
+
+    /* Mengatur jarak antarbaris paragraf dalam konten utama */
+    .main-content p{
+      line-height: 1.8;
+    }
+
+
+    /* Mengatur teks, jarak isi, dan warna latar belakang footer */
+    footer{
+      text-align: center;
+      padding: 14px;
+      background-color: #bbbbbb;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menambahkan sidebar berisi tautan menuju halaman "Profil, Proyek, Tentang Saya, dan Kontak" -->
+  <div class="layout">
+    <aside id="sidebar">
+      <h3>Menu</h3>
+      <nav>
+        <a href="../pages/profile.html">Profil</a>
+        <a href="../pages/gallery.html">Proyek</a>
+        <a href="../pages/about.html">Tentang Saya</a>
+        <a href="../pages/contact.html">Kontak</a>
+      </nav>
+    </aside>
+
+
+    <!-- Menambahkan judul dan ringkasan profil pada konten utama -->
+    <main class="main-content">
+      <h1>Profil Saya</h1>
+      <p>Saya Evan Theryanto,  kelas X TKJ 2. Saya sedang belajar membuat website dengan HTML dan CSS.</p>
+      <p>Di halaman ini ada ringkasan tentang saya, proyek yang sudah dibuat, dan kemampuan yang sedang dipelajari.</p>
+      <p>Gunakan menu di sebelah kiri untuk berpindah antar bagian portofolio.</p>
+    </main>
+  </div>
+
+
+  <!-- Menambahkan footer -->
+  <footer>
+    <a href="../index.html">Kembali ke Beranda</a>
+  </footer>
+
+</body>
+</html>
