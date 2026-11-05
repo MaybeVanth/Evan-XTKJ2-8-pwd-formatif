@@ -1,0 +1,53 @@
+/* Mengatur font tulisan, warna latar belakang seluruh website, dan menghapus margin */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    margin: 0;
+}
+
+/* Mengatur lebar elemen dengan id="galler", dan menengahkan elemen dengan menghapus margin dan auto; */
+#gallery{
+    width:900px;
+    margin:0px auto;
+}
+
+/* Mengatur text agar di tengah, dan mengatur warna tulisan*/
+#gallery h2{
+    text-align:center;
+    color:#000057;
+}
+
+/* Mengatur cara display elemen dengan class="gallery" dengan grid, mengatur format kolum yaitu menambah jumlah grid horizontal menjadi total 3 grid sedangkan menambah jumlah grid vertikal menjadi total 2 grid */
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+/* Menambah padding, menambah border, membulatkan ujung kotak, mengatur ukuran item hanya sampai border, dan mengatur warna latar belakang */
+.gallery>.gallery-item{
+    padding:12px;
+    border:1px solid black;
+    border-radius:15px;
+    box-sizing:border-box;
+    background-color:#f4f4f4;
+}
+
+/* Gambar akan mengisi 100% lebar grid, mengatur tinggi, dan mengatur cara tampil */
+.gallery-item img{
+    width:100%;
+    height:150px;
+    display:block;
+}
+
+/* Mengatur ukuran tulisan, dan menambah jarak di atas */
+.gallery-item h3{
+    font-size:16px;
+    margin-top:10px;
+}
+
+/* Mengatur footer */
+footer {
+  text-align: center;
+  margin: 30px 0;
+}
