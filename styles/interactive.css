@@ -1,0 +1,51 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    padding:25px;
+    background-color: #f4f4f4;
+}
+
+.menu a{
+    color:#0F4D92;
+    text-decoration:none;
+    margin-right:20px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover{
+    color:#6D9AC7;
+}
+
+.btn{
+    display: inline-block;
+    padding:13px 19px;
+    border-radius:20px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight:bold;
+    margin-right:19px;
+}
+
+.btn-grow{
+    transition: transform 0.3s ease-out;
+    background-color: green;
+}
+
+.btn-grow:hover{
+    transform: scale(1.05);
+    
+}
+
+.btn-darken{
+    transition: background-color 0.4s linear;
+    background-color:cornflowerblue;
+    color:#f4f4f4;
+}
+
+.btn-darken:hover{
+    background-color: #223352;
+}
+
+a:focus{
+    outline:2px solid black;
+    outline-offset: 3px;
+}
