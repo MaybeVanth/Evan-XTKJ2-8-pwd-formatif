@@ -1,0 +1,86 @@
+/* Mengatur font dan menghapus margin body */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+/* Mengatur tinggi, posisi text, ukuran background, posisi background, gambar background, tampilan flex, posisi items, 
+dan mengatur posisi konten */
+#hero{
+    height: 400px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../assets/images/Foto_Hero.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mengatur lebar, menengahkan posisi, menambah margin, mengatur warna latar belakang, mengatur warna font, dan membulatkan ujung persegi */
+.hero-content{
+    width:640px;
+    margin: 0px auto;
+    padding:15px;
+    background-color: rgba(19, 38, 92, 0.75);
+    color:#f4f4f4;
+    border-radius:20px;
+}
+
+/* Mengatur animasi */
+.hero-content h1,
+.hero-content p{
+    animation-name: slide-up;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+}
+
+/* Mengatur delay animasi */
+.hero-content p {
+    animation-delay: 0.6s;
+}
+
+/* Mengatur jenis tampilan, menambah padding, mengatur warna latar belakang, mengatur warna tulisan, menghapus garis bawah, menebalkan tulisan, dan membulatkan ujung kotak */
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: skyblue;
+    color:#f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Mengatur posisi tulisan ke tengah, dan menambah padding */
+footer{
+    text-align:center;
+    padding: 20px 0px;
+}
+
+/* Mengatur animasi */
+@keyframes slide-up {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(40px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(8px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
