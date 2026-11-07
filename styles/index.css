@@ -1,0 +1,42 @@
+/* Menghapus margin, mengatur warna latar belakang dan mengatur font tulisan */
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, Arial, Helvetica, sans-serif
+}
+
+/* Mengatur posisi text, mengatur warna latar belakang, mengatur warna tulisan dan menambah padding */
+header {
+  text-align: center;
+  background-color: #13265C;
+  color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Mengatur lebar, menengahkan konten, dan menambah padding */
+main {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Mengatur warna tulisan, dan ukuran tulisan */
+#components h2,
+#pages h2 {
+  color: #13265C;
+  font-size: 20px;
+}
+
+/* Mengatur warna tulisan */
+main a {
+  color: skyblue;
+}
+
+/* Mengatur ukuran tulisan, mengatur posisi ftulisan, mengatur warna latar belakang, dan menambah paddin g */
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  background-color: #dae4ef;
+  padding: 14px;
+}
