@@ -5,112 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Singkat</title>
 
-    <style>
-
-        /* Gaya untuk isi halaman, warna backgroundnya serta mengatur padding, margin, dan border radius (bulatan di sekitar kotaknya) */
-        body {
-            max-width: 700px;
-            margin: 20px auto;
-            border-radius: 50px;
-            padding: 20px;
-            background-color: #080d1a;
-            font-family: Arial, Helvetica, sans-serif
-        }
-
-        /* Menambahkan jarak antara elemen utama */
-        main {
-            margin: 40px auto;
-        }
-
-        /* Styling foto, ukuran, dan bentuknya */
-        .foto {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto;
-        }
-
-        /* Styling untuk judul (nama: Evan Theryanto) */
-        h1 {
-            text-align: center;
-            font-size: 40px;
-            color: rgb(0, 210, 255);
-            font-family: Georgia, 'Times New Roman', Times, serif
-        }
-
-        /* Styling untuk bagian subjudul (kelas: X TKJ 2 Immanuel) */
-        h2 {
-            text-align: center;
-            font-size: 24px;
-            color: rgba(255, 255, 255, 1);
-            font-family: Georgia, 'Times New Roman', Times, serif
-        }
-
-        /* Styling untuk judul bagian (Tentang Saya) */
-        h3 {
-            color: Light Sky Aqua;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0 0 8px;
-
-        }   
-
-        /* Styling untuk textboxtnya */
-        .textbox {
-            background-color: #0e182c;
-            border-radius: 50px;
-            padding: 20px;
-            margin-bottom: 20px;
-            color: rgb(226, 237, 248);
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        /* Menambah margin di bagian bawah */
-        .textbox p {
-            margin: 0 0 12px;
-        }
-
-        /* Menghapus margin di bagian bawah elemen <p> dan <ul> */
-            .textbox p:last-child,
-            .textbox ul:last-child {
-                margin-bottom: 0;
-            }
-
-        /* Mengatur jarak antara elemen <ul> dan <li> */
-        .textbox ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-
-        /* Styling untuk footer */
-        footer {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-    </style>
 </head>
 
-<body>
-    <main>
-        <img src="../assets/images/SelfieEvan.jpeg" alt="Foto Evan" class="foto">
+<body style="max-width: 700px; margin: 20px auto; border-radius: 50px; padding: 20px; background-color: #f5f7fb; font-family: Arial, Helvetica, sans-serif;">
+    <main style="margin: 40px auto;">
+        <img src="../assets/images/SelfieEvan.jpeg" alt="Foto Evan" class="picture" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;">
 
-        <h1>Evan Theryanto</h1>
-        <h2>X TKJ 2 Immanuel</h2>
+        <h1 style="text-align: center; font-size: 40px; color: royalblue; font-family: Georgia, 'Times New Roman', Times, serif;">Evan Theryanto</h1>
+        <h2 style="text-align: center; font-size: 24px; color: rgb(35, 82, 124); font-family: Georgia, 'Times New Roman', Times, serif;">X TKJ 2 Immanuel</h2>
 
         <hr>
 
-        <section class="textbox">
-            <h3>Tentang Saya</h3>
+        <section style="background-color: rgba(14, 24, 44, 0.9); border-radius: 50px; padding: 20px; margin-bottom: 20px; color: rgb(226, 237, 248); font-size: 16px; line-height: 1.6;">
+            <h3 style="color: rgb(0, 120, 180); font-family: Georgia, 'Times New Roman', Times, serif; margin: 0 0 8px;">Tentang Saya</h3>
 
-            <p>
+            <p style="margin: 0 0 12px; color: #e2edf8;">
                 Halo! Nama saya Evan Theryanto. Saya lahir pada tanggal 14 Februari 2011.
                 Saya belajar di SMK Immanuel, kelas 10 TKJ 2. Saya tertarik dalam membuat website dan koding software yang menarik, unik dan bermanfaat untuk digunakan semua orang.
             </p>
 
-            <p>
+            <p style="margin: 0 0 12px; color: #e2edf8;">
                 Cita-cita saya adalah menjadi IT Developer yang dapat membuat software yang dibutuhkan orang lain dan dapat berkontribusi dalam memajukan teknologi informasi.
                 Maka, mulai dari sekarang saya harus belajar koding dan membuat website dengan kreatif dengan keras agar dapat memenuhi cita-cita saya.
             </p>
@@ -120,7 +34,7 @@
     </main>
 
           <!-- Tombol footer "Kembali ke Beranda" -->
-        <footer>
+        <footer style="text-align: center; margin-bottom: 30px;">
             <a href="../index.html">Kembali ke Beranda</a>
         </footer>
         
