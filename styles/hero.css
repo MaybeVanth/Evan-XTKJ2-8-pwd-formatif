@@ -11,7 +11,7 @@ dan mengatur posisi konten */
     text-align: center;
     background-size: cover;
     background-position: center;
-    background-image: url(../assets/images/Foto_Hero.jpg);
+    background-image: url(../assets/images/foto_hero.jpg);
     display: flex;
     align-items: center;
     justify-content: center;

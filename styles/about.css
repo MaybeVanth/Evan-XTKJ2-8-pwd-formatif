@@ -7,7 +7,7 @@ body {
 
 /* Menghubungkan gambar latar belakang, mengatur ukuran dan posisinya, mengatur sifat gambar setelah diposisikan, dan menambahkan padding */
 #about {
-    background-image: url('../assets/images/BackgroundAlam.jpg');
+    background-image: url('../assets/images/background-alam.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

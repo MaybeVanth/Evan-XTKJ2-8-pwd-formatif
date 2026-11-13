@@ -34,7 +34,7 @@ main a {
 
 /* Mengatur ukuran tulisan, mengatur posisi ftulisan, mengatur warna latar belakang, dan menambah paddin g */
 
-footer {
+footer p{
   font-size: 12px;
   text-align: center;
   background-color: #dae4ef;
